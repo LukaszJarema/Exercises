@@ -1,14 +1,16 @@
-package zadaniaPodstawowe.exc_3;
+package zadaniaPodstawowe.exc_4;
 
 /**
  * Przygotuj program, który wyświetli na konsoli liczby od 1 do 49. Użyj w tym celu pętli
- * for.
+ * while
  */
 
-public class Exc_3 {
+public class Exc_4 {
   public static void main(String[] args) {
-    for (int i = 0; i < 49; i++) {
-      System.out.println("Liczba " + (i+1));
+    int i = 1;
+    while (i <= 49) {
+      System.out.println("Liczba " + i);
+      i++;
     }
   }
 }
