@@ -14,14 +14,18 @@ public class Exc_7 {
 
     boolean result = false;
 
-    while (!result)
-      try {
-        System.out.print("Podaj długość boku kwadratu: ");
-        Scanner scanner = new Scanner(System.in);
-        sideA = scanner.nextDouble();
-        result = true;
-      } catch (Exception e) {
-        System.out.println("Nie podałeś wartości liczbowej");
+      while (!result | sideA <= 0) {
+        try {
+          System.out.print("Podaj długość boku kwadratu: ");
+          Scanner scanner = new Scanner(System.in);
+          sideA = scanner.nextDouble();
+          if (sideA <= 0) {
+            System.out.println("Podałeś niewłaściwą wartość");
+          }
+          result = true;
+        } catch (Exception e) {
+          System.out.println("Nie podałeś wartości liczbowej");
+        }
       }
 
     System.out.println("Pole kwadratu wynosi: " + AreaCircuit.area(sideA));
