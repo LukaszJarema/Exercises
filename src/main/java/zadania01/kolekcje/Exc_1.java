@@ -9,7 +9,7 @@ package zadania01.kolekcje;
  * e. Wyświetl kolejno elementy tablicy wykorzystując pętlę for.
  */
 
-public class Zad_1 {
+public class Exc_1 {
   public static void main(String[] args) {
     int[] table = new int[10];
 
