@@ -21,7 +21,7 @@ package zadania01.wyjątki;
  * [7] = d
  */
 
-public class Zad_8 {
+public class Exc_8 {
   public static void main(String[] args) {
     String variable = "Olgierd";
 
